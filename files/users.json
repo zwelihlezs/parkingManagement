@@ -8,5 +8,15 @@
         "username": "Mpho",
         "password": "d4e6ht",
         "role": "customer"
+    },
+    {
+        "username": "Mtho",
+        "password": "fws3rerg",
+        "role": "customer"
+    },
+    {
+        "username": "Sizwe",
+        "password": "dsgdrfdh",
+        "role": "admin"
     }
 ]
