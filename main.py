@@ -1,8 +1,8 @@
 from malls import malls
-from signup import *
+from methods.signUp import *
 
 
 print('%.2f' % malls[0]['fee'])
 
-user = GetUserRole()
-print(user)
+# users = GetUsers()
+SignUp()
