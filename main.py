@@ -1,4 +1,5 @@
-from malls import malls
+from files.malls import malls
+from methods.pms import chooseMall
 from methods.signUp import *
 from methods.getUsers import *
 from methods.login import *
@@ -9,8 +10,9 @@ print('%.2f' % malls[0]['fee'])
 users = GetUsers()
 # SignUp
 currentUser = Login(users)
-print(type(currentUser))
-print(f'\nusername: {currentUser["username"]} \nRole: {currentUser["role"]}\n')
+chooseMall(currentUser)
+# print(type(currentUser))
+# print(f'\nusername: {currentUser["username"]} \nRole: {currentUser["role"]}\n')
 
 
 ## MAIN MENU ##

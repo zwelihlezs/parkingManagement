@@ -29,7 +29,6 @@ def GetUsers():
         if path.exists() and path.stat().st_size > 0:
             with open('files/users.json', 'r') as file:
                  users = json.load(file)
-                 print(f'#%$%^^%&  {users}')
                  return users
         else:
              users = []
@@ -42,7 +41,7 @@ def GetUsers():
 
 
 def SignUp():
-
+    #user sign up and create prof
     users = GetUsers()
     print(type(users))
     print(f'user: {users}')

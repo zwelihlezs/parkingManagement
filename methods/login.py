@@ -15,7 +15,12 @@ def Login(users):
     for user in users:
         if username == user['username'] and password == user['password']:
             currentUser = user
+            login = 'successful'
             print('Login SuCcEsSfUl')
+        else:
+            login = 'failed'
     return currentUser
+
+
         
         
