@@ -1,19 +1,13 @@
 from files.malls import malls
-from methods.pms import chooseMall
+from methods.pms import *
 from methods.signUp import *
 from methods.getUsers import *
 from methods.login import *
 
 
-print('%.2f' % malls[0]['fee'])
+#print('%.2f' % malls[0]['fee'])
 
 users = GetUsers()
-# SignUp
-currentUser = Login(users)
-chooseMall(currentUser)
-# print(type(currentUser))
-# print(f'\nusername: {currentUser["username"]} \nRole: {currentUser["role"]}\n')
-
 
 ## MAIN MENU ##
 
@@ -28,16 +22,20 @@ def Menu():
 
     userInput = input('Choose an option(1-3): ')
     if userInput == '1':
-        currentUser = Login()
+        currentUser = Login(users)
+        CustomerMenu()
     elif userInput == '2':
         SignUp()
         print('Registration successful')
     elif userInput == '3':
         print('Bye')
     else:
-        print('Please make sure your input is coorect')
+        print('Please make sure your input is correct')
 
-    # if currentUser != '':
-        #customerMenu()
+    if currentUser == '':
+        exit
 
 
+
+
+Menu()

@@ -64,6 +64,13 @@ def SignUp():
             "mall2": [{'mall':malls[1]["name"]},{'fees': 0},{'visits': 0}],
             "mall3": [{'mall':malls[2]["name"]},{'fees': 0},{'visits': 0}]
     }
+    elif role == 'admin':
+        user = {
+            "username": username,
+            "password": password,
+            "role": role,
+            "myMall": ''
+        }
     
     # users = list(users)
     users.append(user)

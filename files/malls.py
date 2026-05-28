@@ -5,7 +5,8 @@ malls = [
     'rate': 'flatRate',
     'fee': 15.00,
     'duration': 'day',
-    'parkingCapacity': 250,
+    'parkingCapacity': 25,
+    'occupied': 0
     },
     {
     'name': 'Pavilion Shopping Centre',
@@ -13,7 +14,8 @@ malls = [
     'rate': 'per hour (or part thereof)',
     'fee': 15.00,
     'duration': 'hour',
-    'parkingCapacity': 180,
+    'parkingCapacity': 18,
+    'occupied': 0
     },
     {
     'name': 'La Lucia Mall',
@@ -21,7 +23,9 @@ malls = [
     'rate': 'hourly with daily Cap',
     'fee': 12.00,
     'duration': 'hour',
-    'parkingCapacity': 150,
-    'maximumFee': 60.00
+    'parkingCapacity': 15,
+    'occupied': 0,
+    'maximumFee': 60.00,
+    'occupants': []
     }
 ]
