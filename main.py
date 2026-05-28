@@ -21,8 +21,23 @@ def Menu():
     print('===== Parking Management System =====')
     print()
     currentUser = ''
-    loginAttempt = 0
-    while currentUser =='' and loginAttempt < 3:
-        loginAttempt +=1
-        # currentUser = login()
+
+    #display menu and get user choice
+    print('######## MENU ########')
+    print('1. Login \n2. Register \n3. Exit')
+
+    userInput = input('Choose an option(1-3): ')
+    if userInput == '1':
+        currentUser = Login()
+    elif userInput == '2':
+        SignUp()
+        print('Registration successful')
+    elif userInput == '3':
+        print('Bye')
+    else:
+        print('Please make sure your input is coorect')
+
+    # if currentUser != '':
+        #customerMenu()
+
 

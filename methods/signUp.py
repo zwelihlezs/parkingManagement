@@ -1,4 +1,5 @@
 import json
+from files.malls import malls
 from pathlib import Path
 
 ##User sign up
@@ -54,10 +55,14 @@ def SignUp():
         password = input('\nEnter your password: ')
         role = GetUserRole()
 
-    user = {
-        "username": username,
-        "password": password,
-        "role": role
+    if role == 'customer':
+        user = {
+            "username": username,
+            "password": password,
+            "role": role,
+            "mall1": [{'mall':malls[0]["name"]},{'fees': 0},{'visits': 0}],
+            "mall2": [{'mall':malls[1]["name"]},{'fees': 0},{'visits': 0}],
+            "mall3": [{'mall':malls[2]["name"]},{'fees': 0},{'visits': 0}]
     }
     
     # users = list(users)
